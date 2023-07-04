@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import "./app/config/dotenv.js";
+import "./app/config/dotenv.config.js";
 
 const PORT = process.env.PORT || 5000;
 const app = express();
