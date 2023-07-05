@@ -13,6 +13,6 @@ const schema = mongoose.Schema({
   },
 });
 
-const Country = mongoose.model("Country", schema);
+const Governorate = mongoose.model("Governorate", schema);
 
-export default Country;
+export default Governorate;

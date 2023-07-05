@@ -43,10 +43,6 @@ const schema = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Role",
   },
-  brand: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "brand",
-  },
   wishList: [
     {
       type: mongoose.Schema.Types.ObjectId,

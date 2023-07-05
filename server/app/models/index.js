@@ -1,7 +1,7 @@
 import role from './role.model.js';
 import user from './user.model.js';
 import profile from './profile.model.js';
-import country from './country.model.js';
+import governorate from "./governorate.model.js";
 import city from './city.model.js';
 import category from './category.model.js';
 import subcategory from "./subcategory.model.js";
@@ -17,7 +17,7 @@ const db = {
     role,
     user,
     profile,
-    country,
+    governorate,
     city,
     category,
     subcategory,

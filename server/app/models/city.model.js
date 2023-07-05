@@ -11,9 +11,9 @@ const schema = mongoose.Schema({
     required: true,
     unique: true,
   },
-  country: {
+  governorate: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Country",
+    ref: "Governorate",
   },
 });
 

@@ -19,6 +19,14 @@ const schema = mongoose.Schema({
     type: String,
     required: true,
   },
+  owner: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+  },
+  workers: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+  }],
   categories: [
     {
       type: mongoose.Schema.Types.ObjectId,
