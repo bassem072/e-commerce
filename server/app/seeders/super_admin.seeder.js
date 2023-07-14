@@ -1,9 +1,11 @@
-import db from "../models";
+import db from "../models/index.js";
+import bcrypt from "bcrypt";
 
 const Role = db.role;
 const User = db.user;
 
 const run = async () => {
+  console.log("hi");
   Role.findOne({
     name: "super_admin",
   })
@@ -17,6 +19,7 @@ const run = async () => {
         birthday: new Date("1997-05-22"),
         roles: role._id,
       });
+      console.log(super_admin);
       super_admin
         .save()
         .then((super_admin) => console.log("Super Admin Added: ", super_admin))

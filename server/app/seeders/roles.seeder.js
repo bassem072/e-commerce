@@ -1,4 +1,4 @@
-import db from "../models";
+import db from "../models/index.js";
 
 const Role = db.role;
 
@@ -14,7 +14,7 @@ const createRole = async (roleName) => {
 };
 
 const run = () => {
-  roles.map(async item => await createRole(item));
+  roles.map(async (item) => await createRole(item));
 };
 
 export default run;

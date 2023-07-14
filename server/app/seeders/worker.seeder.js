@@ -1,5 +1,6 @@
 import { faker } from "@faker-js/faker";
-import db from "../models";
+import db from "../models/index.js";
+import bcrypt from "bcrypt";
 
 const Role = db.role;
 const User = db.user;

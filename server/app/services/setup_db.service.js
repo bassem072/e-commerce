@@ -1,5 +1,5 @@
-import seeder from "../seeders";
-import db from "../models";
+import seeder from "../seeders/index.js";
+import db from "../models/index.js";
 
 const Role = db.role;
 
