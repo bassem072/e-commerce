@@ -12,6 +12,7 @@ import productInfo from "./productInfo.model.js";
 import cart from "./cart.model.js";
 import comment from "./comment.model.js";
 import orders from "./orders.model.js";
+import refreshToken from "./refreshToken.model.js";
 
 const db = {
     role,
@@ -28,6 +29,7 @@ const db = {
     cart,
     comment,
     orders,
+    refreshToken,
 };
 
 export default db;

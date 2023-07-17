@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 var SchemaTypes = mongoose.Schema.Types;
-const schema = mongoose.Schema({
+const schema = new mongoose.Schema({
   name_en: {
     type: String,
     required: true,

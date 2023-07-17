@@ -4,3 +4,5 @@ const authConfig = {
   jwtRefreshExpiration: 86400,
   jwtRefreshExpirationLong: 2592000,
 };
+
+export default authConfig;

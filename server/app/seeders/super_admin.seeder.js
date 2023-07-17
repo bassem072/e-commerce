@@ -17,7 +17,7 @@ const run = async () => {
         password: bcrypt.hashSync("bassem2751959@", 8),
         gender: "male",
         birthday: new Date("1997-05-22"),
-        roles: role._id,
+        role: role._id,
       });
       console.log(super_admin);
       super_admin

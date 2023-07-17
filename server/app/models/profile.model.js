@@ -1,6 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 
-const schema = mongoose.Schema({
+const schema = new mongoose.Schema({
   mobile_number: {
     type: String,
     validate: {

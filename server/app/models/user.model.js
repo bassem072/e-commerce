@@ -1,6 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 
-const schema = mongoose.Schema({
+const schema = new mongoose.Schema({
   first_name: {
     type: String,
     required: true,
@@ -31,15 +31,11 @@ const schema = mongoose.Schema({
     type: String,
     default: "user.png",
   },
-  remember: {
-    type: Boolean,
-    default: false,
-  },
   register_date: {
     type: Date,
     default: new Date(),
   },
-  roles: {
+  role: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Role",
   },

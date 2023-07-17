@@ -20,7 +20,7 @@ const run = async () => {
           password: bcrypt.hashSync("bassem2751959@", 8),
           gender: sex,
           birthday: faker.date.birthdate(),
-          roles: role._id,
+          role: role._id,
         });
         admin
           .save()
